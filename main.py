@@ -80,11 +80,11 @@ def main():
             return
         traffic = int(int(data['transfer_checkin']) / 1024 / 1024)
         print(f'签到获得的剩余流量: {traffic}MB')
-        if traffic > 0:
-            convert_traffic(url=convert_traffic_url,
-                            token=token, traffic=traffic)
-        else:
-            print('没有需要转换的流量，明天再来吧！')
+        # if traffic > 0:
+        #    convert_traffic(url=convert_traffic_url,
+        #                    token=token, traffic=traffic)
+        # else:
+        #    print('没有需要转换的流量，明天再来吧！')
 
 
 if __name__ == '__main__':
